@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Documentary</title>
+  <link rel="stylesheet" href="gamestyle.css">
+
+  <header>
+    <p>Welcome to My World</p>
+  </header>
+
+<body>
+  <!--music-->
+  <audio id="background-music" loop>
+    <source src="assets/wctmw.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 音乐控制按钮 -->
+  <button id="music-toggle" class="music-button">
+    <img id="music-icon" src="assets/music2.png" alt="Music Icon" style="width: 40px; height: 35px;">
+  </button>
+
+  <script>
+    const music = document.getElementById('background-music');
+    const musicToggle = document.getElementById('music-toggle');
+    const musicIcon = document.getElementById('music-icon'); // 获取图标元素
+
+    // 点击按钮控制音乐播放/暂停
+    musicToggle.addEventListener('click', () => {
+      if (music.paused) {
+        music.play();
+        musicIcon.src = 'assets/music2.png';
+      } else {
+        music.pause();
+        musicIcon.src = 'assets/music2.png';
+      }
+    });
+  </script>
+
+  <!-- 页面主体内容 -->
+  <div id="portfolio1" class="portfolio-section">
+    <h1>Interactive Documentary</h1>
+
+    <div class="work">
+      <iframe class="responsive-iframe" src="https://player.stornaway.io/watch/935fa505" style="border:none"></iframe>
+    </div>
+
+    <p>
+      If the work cannot be displayed, here is a <a href="https://player.stornaway.io/watch/935fa505"><b>ALTERNATIVE
+          LINK</b></a>
+    </p>
+    <br />
+    <p class="mainparagraph">
+      &emsp;Interactive documentaries are more fun than traditional videos, using interactive game options to neutralize
+      the seriousness and educational nature of documentaries. I chose to make an interactive documentary about a day
+      trip to hell precisely because I wanted to use the fun of interactive documentaries to dissolve the boring and
+      dogmatic feeling of popular science. I use this format to explore the combination of Eastern culture and modern
+      expression in this project.
+      <br /><br />
+      &emsp;The biggest advantage of the branching structure in this documentary is that it increases the audience's
+      participation and freedom. By dividing the exploration into distinct areas, viewers can choose which scenes to
+      engage with, minimizing fatigue from repetitive or uninteresting content. In a virtual world, immersion is
+      stronger when users can influence the narrative, making the learning experience more memorable and effective
+      (Ryan, 2015).
+      <br /><br />
+      &emsp;To tell this story, I primarily used an participatory mode. Although I cited historical documents common in
+      expository documentaries, I focused more on engaging the audience through the interactive characters in Difu Tour,
+      who are both narrators and participants in the story. These characters not only provide narrative, but also allow
+      the audience to make choices that affect the direction of the story, thereby enhancing the overall immersion and
+      participation (Nichols, 2010). However, the story unfolds under my subjective guidance. This approach maintains
+      narrative coherence while fully reflecting interactivity, and strikes a balance between the two.
+      <br /><br />
+      &emsp;In addition, I also referenced some Poetic Mode and used some musical effects and visual language to shape
+      the atmosphere of the documentary. For example, the soundtracks and screams of the Yellow Springs Road and the
+      Trial of Becoming a Ghost can make the audience feel the frightening atmosphere; and I use warm and clean images
+      when showing the Lookout and the festivals of the hell, while I use gloomy and blurred images at other times.
+      <br /><br />
+      &emsp;By combining these elements, the documentary balances entertainment and education, providing an engaging and
+      memorable exploration of Eastern cultural themes in a modern, interactive format.
+      <br /> <br /> <br /><i><b>Reference list</b></i>
+      <br />
+      Nichols, B. (no date) ‘How can We Describe the Observational, participatory, and Performative Modes of Documentar
+      Film? ’, in Introduction to Documentary. Indiana University Press, pp. 132–158. <br />
+      Ryan, M.-L. (2015) ‘The Text as World: Theories of Immersion’, in Narrative as Virtual Reality: Immersion and
+      Interactivity in Literature and Electronic Media. Baltimore and London: The John Hopkins University Press, pp.
+      175–199.
+
+    </p>
+
+  </div>
+
+
+  <!-- 浮窗按钮 -->
+  <div class="floating-buttons">
+    <!-- 返回按钮 -->
+    <a href="index.html" style="text-decoration: none;">
+      <button title="Home">
+        <img src="assets/homeicon.png" width="40px" height="40px" alt="Home icon">
+      </button>
+    </a>
+    <hr />
+    <!-- 社交网按钮 -->
+    <a href="net.html" style="text-decoration: none;">
+      <button title="Network Diagrams">
+        <img src="assets/networkicon.png" width="40px" height="40px" alt="network icon">
+      </button>
+    </a>
+    <hr />
+    <!-- 网站按钮 -->
+    <a href="web.html" style="text-decoration: none;">
+      <button title="AI">
+        <img src="assets/AIicon.png" width="40px" height="40px" alt="Website icon">
+      </button>
+    </a>
+    <hr />
+  </div>
+
+
+</body>
+<br />
+<br />
+
+<br />
+<footer class="footer">
+  <div>
+    <p>Email: <a href="mailto:c3012216@newcastle.ac.uk">c3012216@newcastle.ac.uk</a> </p>
+  </div>
+</footer>
+
+</head>
+
+</html>

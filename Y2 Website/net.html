@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Diagrams</title>
+  <link rel="stylesheet" href="substyles.css">
+
+  <header>
+    <p>Welcome to My World</p>
+  </header>
+
+<body>
+  <!--music-->
+  <audio id="background-music" loop>
+    <source src="assets/wctmw.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 音乐控制按钮 -->
+  <button id="music-toggle" class="music-button">
+    <img id="music-icon" src="assets/music2.png" alt="Music Icon" style="width: 40px; height: 35px;">
+  </button>
+
+  <script>
+    const music = document.getElementById('background-music');
+    const musicToggle = document.getElementById('music-toggle');
+    const musicIcon = document.getElementById('music-icon'); // 获取图标元素
+
+    // 点击按钮控制音乐播放/暂停
+    musicToggle.addEventListener('click', () => {
+      if (music.paused) {
+        music.play();
+        musicIcon.src = 'assets/music2.png';
+      } else {
+        music.pause();
+        musicIcon.src = 'assets/music2.png';
+      }
+    });
+  </script>
+
+  <!-- 页面主体内容 -->
+  <div id="portfolio1" class="portfolio-section">
+    <h1>Network Diagrams of <i>My Brilliant Friend</i></h1>
+
+    <div class="work">
+      <iframe class="responsive-iframe" src="https://public.flourish.studio/story/2718448/"
+        style="border:none"></iframe>
+    </div>
+
+    <p>
+
+      <i>If the work cannot be displayed, here is a <b><a href="https://public.flourish.studio/story/2718448/"
+            style="text-decoration: none;">ALTERNATIVE LINK</a></b>
+      </i>
+    </p>
+    <br />
+    <p class="mainparagraph">
+      &emsp;This Network Diagrams visualizes the social relationships between characters in the TV series My Brilliant
+      Friend, including friendship, family, love,
+      and work relationships. Simultaneously, I made three simplified diagrams in next three pages, which are the love
+      relationship diagram of two heroines,
+      the love relationship diagram of the love saint Nino, and the work relationship diagram of Naples, where the story
+      mainly takes place.<br /><br />
+      &emsp;The information of this diagram are collected from mainly two sources, the series itself and the fans
+      community. Fans community like Fandom already
+      organized some relationships and relationship analysis of main characters in table, but minor characters wasn’t
+      recorded. Therefore most of information
+      and photos are collected from series itself.<br /><br />
+      &emsp;The social relationships between people are not single point to single point, but interlaced like a complex
+      diagram. My brilliant Friend contains too
+      many characters and plots, audiences may forget the relationship or the minor characters easily, it affects
+      people's understanding of the plot(Ma and Yang, 2019). And charts as a simplifying tool for complex data can
+      enhance people's memory (Mulrow, 2012).
+      <br /><br />&emsp;In this diagram, nodes represent characters, and
+      depending on the size of the nodes, its easy to determine the importance of the character in the story. And names
+      under the nodes are characters’ first
+      names, from the color of the name, the characters can be divided into different families at a glance. Besides,
+      links represent relationships. The
+      weighted links often represents the strength of the character's connection, and in this table, the strength of the
+      connection is based not only on the
+      emotional strength of the character, but also by the amount of space the presentation of the relationship takes up
+      in the TV series. You can also see
+      there are arrows on the links, some are double-headed and others just single headed. The one-way arrow in this
+      diagram represents a one-way emotional
+      connection, which can be unrequited love or one-sided hatred. According to the above, network diagram can clearly
+      show many-to-many relationships in
+      one time, and help audience understand and recall the characters and plots quickly.
+      <br /><br /><br />
+      <i><b>Reference list</b></i>
+      <br />
+      Ma, K. and Yang, L. (2019a) ‘Automatic extraction and quantitative evaluation of the character Relationship
+      Networks from Children’s Literature Works’, 2019 International Conference on Asian Language Processing (IALP), pp.
+      188–193.
+      <br />Mulrow, E.J. (2012) ‘The visual display of quantitative information’, Technometrics, 44(4).
+    </p>
+  </div>
+
+
+  <!-- 浮窗按钮 -->
+  <div class="floating-buttons">
+    <!-- 返回按钮 -->
+    <a href="index.html" style="text-decoration: none;">
+      <button title="Home">
+        <img src="assets/homeicon.png" width="40px" height="40px" alt="Home icon">
+      </button>
+    </a>
+    <hr />
+    <!-- 互动纪录片按钮 -->
+    <a href="game.html" style="text-decoration: none;">
+      <button title="Interactive Documentary">
+        <img src="assets/icons8-video-50.png" width="40px" height="40px" alt="Game icon">
+      </button>
+    </a>
+    <hr />
+    <!-- 网站按钮 -->
+    <a href="web.html" style="text-decoration: none;">
+      <button title="AI">
+        <img src="assets/AIicon.png" width="40px" height="40px" alt="Website icon">
+      </button>
+    </a>
+    <hr />
+  </div>
+
+
+</body>
+<br />
+<br />
+
+<br />
+<footer class="footer">
+  <div>
+    <p>Email: <a href="mailto:c3012216@newcastle.ac.uk">c3012216@newcastle.ac.uk</a> </p>
+  </div>
+</footer>
+
+</head>
+
+</html>
