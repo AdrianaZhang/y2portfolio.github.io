@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCH2069 Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <p>Welcome to My World</p>
+</header>
+
+<br />
+
+<body>
+    <!--music-->
+
+    <audio id="background-music" autoplay loop>
+        <source src="assets/wctmw.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- 音乐控制按钮 -->
+    <button id="music-toggle" class="music-button">
+        <img id="music-icon" src="assets/music2.png" alt="Music Icon" style="width: 40px; height: 35px;">
+    </button>
+
+    <script>
+        const music = document.getElementById('background-music');
+        const musicToggle = document.getElementById('music-toggle');
+
+        // 点击按钮控制音乐播放/暂停
+        musicToggle.addEventListener('click', () => {
+            if (music.paused) {
+                music.play()
+                musicIcon.src = 'assets/music2.png'; // 播放时的图标
+            } else {
+                music.pause();
+                musicIcon.src = 'assets/music.png'; // 暂停时的图标
+            }
+        });
+    </script>
+
+
+    <!-- 页面主体内容 -->
+    <div id="portfolio1" class="portfolio-section">
+        <h1>Portfolio</h1>
+        <p>Hi! Welcome to my digital creative world!<br />
+            In this portfolio,<br />
+            I'll show you my digital media works<br />
+            as I take you through three creative projects:<br />
+            Digital Storytelling, Data Visualization, and Mobile website.<br />
+            Follow me and explore the infinite possibilities of the digital world!
+        </p>
+    </div>
+
+
+    <!-- 浮窗按钮 -->
+    <div class="floating-buttons">
+        <a href="net.html" style="text-decoration: none;"><button>Network Diagrams</button></a>
+        <a href="game.html" style="text-decoration: none;"><button>Interactive Documentary</button></a>
+        <a href="web.html" style="text-decoration: none;"><button>AI Learning</button></a>
+    </div>
+
+</body>
+<br />
+<br />
+<footer class="footer">
+    <div>
+        <p>Email: <a href="mailto:c3012216@newcastle.ac.uk">c3012216@newcastle.ac.uk</a> </p>
+    </div>
+</footer>
+
+</html>
