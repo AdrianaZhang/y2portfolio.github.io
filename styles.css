@@ -29,7 +29,7 @@ body {
 
     line-height: 1.6;
     text-align: center;
-    background-image: url('./assets/ho3.jpg') !important;
+    background-image: url('assets/ho3.jpg') !important;
     background-size: cover !important;
     /* 让背景图完全覆盖 */
     background-position: center;
